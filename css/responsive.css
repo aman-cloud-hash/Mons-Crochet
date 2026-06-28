@@ -208,9 +208,21 @@
 
   /* Grids */
   .grid-4,
-  .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  #categoriesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-3);
+  }
+
+  #categoriesGrid .category-card-title {
+    font-size: var(--fs-sm);
   }
 
   .grid-6 {
