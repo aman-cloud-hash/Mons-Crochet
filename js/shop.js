@@ -1,6 +1,4 @@
-/* ============================================================
-   Mons Crochet — Shop Page Module
-   ============================================================ */
+import { initAnimations } from './animations.js';
 
 const PRODUCTS = [
   { id: '1', name: 'Rose Bouquet — Dusty Pink', category: 'Bouquets', price: 1299, desc: 'A beautiful handcrafted bouquet of six dusty pink crochet roses.', image: 'assets/images/prod-rose-bouquet.png', label: 'New' },
@@ -61,9 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
       countEl.textContent = `Showing ${items.length} product${items.length > 1 ? 's' : ''}`;
     }
 
-    // Trigger IntersectionObserver for scroll animation
-    const event = new Event('scroll');
-    window.dispatchEvent(event);
+    // Initialize animations for dynamically added elements
+    initAnimations();
   }
 
   // Filter & Sort Logic
