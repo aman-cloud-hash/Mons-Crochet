@@ -34,7 +34,15 @@
   }
 
   .hero-image {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-8);
+    width: 100%;
+  }
+
+  .hero-image-main {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   /* Grids */
@@ -80,6 +88,10 @@
     gap: var(--space-6);
   }
 
+  .hero-float-card {
+    display: none;
+  }
+
   /* Grids */
   .grid-4,
   .grid-3 {
@@ -117,8 +129,14 @@
   }
 
   /* Floating */
+  .floating-btn-whatsapp,
+  .floating-btn-call,
+  .floating-btn-instagram {
+    display: none;
+  }
+
   .floating-buttons {
-    bottom: calc(var(--space-16) + var(--space-4));
+    bottom: calc(65px + var(--space-4));
     right: var(--space-4);
   }
 
@@ -178,9 +196,10 @@
   }
 
   .hero-stats {
-    flex-direction: column;
-    gap: var(--space-4);
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
   }
 
   .hero-stat-item {
@@ -891,6 +910,7 @@
 
 .quick-view-info .product-card-desc {
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   margin-bottom: var(--space-5);
 }
 
