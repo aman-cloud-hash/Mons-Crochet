@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -41,7 +41,7 @@
   z-index: 2;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: calc(var(--header-height) + var(--space-16)) var(--section-px) var(--space-16);
+  padding: calc(var(--header-height) + var(--space-8)) var(--section-px) var(--space-10);
   width: 100%;
 }
 
