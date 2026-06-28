@@ -22,6 +22,11 @@
   box-shadow: var(--shadow-sm);
 }
 
+.header.nav-up {
+  transform: translateY(-100%);
+  box-shadow: none;
+}
+
 .header-inner {
   display: flex;
   align-items: center;

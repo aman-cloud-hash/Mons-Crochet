@@ -18,10 +18,22 @@ export function initHeader() {
   function handleScroll() {
     const currentScroll = window.scrollY;
 
+    // Apply active class if scrolled past threshold
     if (currentScroll > scrollThreshold) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
+    }
+
+    // Hide on scroll down, show on scroll up
+    if (currentScroll <= 50) {
+      header.classList.remove('nav-up');
+    } else if (currentScroll > lastScroll && currentScroll > 120) {
+      // Scrolling down (page moves up) -> Hide header
+      header.classList.add('nav-up');
+    } else if (currentScroll < lastScroll) {
+      // Scrolling up (page moves down) -> Show header
+      header.classList.remove('nav-up');
     }
 
     lastScroll = currentScroll;

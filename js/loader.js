@@ -10,7 +10,7 @@ export function initLoader() {
   loader.innerHTML = `
     <div class="loader-content">
       <div class="loader-visual">
-        <svg class="yarn-svg" viewBox="0 0 200 200" width="120" height="120">
+        <svg class="yarn-svg" viewBox="0 0 200 200" width="100" height="100">
           <defs>
             <radialGradient id="yarnGrad" cx="40%" cy="40%" r="60%">
               <stop offset="0%" stop-color="#ffb3c6" />
@@ -63,7 +63,7 @@ export function initLoader() {
   const hideLoader = () => {
     setTimeout(() => {
       loader.classList.add('hidden');
-    }, 2200);
+    }, 1200);
   };
 
   if (document.readyState === 'complete') {
@@ -71,6 +71,15 @@ export function initLoader() {
   } else {
     window.addEventListener('load', hideLoader);
   }
+
+  // Fix bfcache issue (browser back button showing blank page)
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      loader.classList.add('hidden');
+      const wrapper = document.querySelector('.page-wrapper');
+      if (wrapper) wrapper.classList.remove('page-exit');
+    }
+  });
 
   // Fallback: hide after 4.5 seconds even if load doesn't fire
   setTimeout(() => {

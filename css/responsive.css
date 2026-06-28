@@ -40,7 +40,7 @@
     width: 100%;
   }
 
-  .hero-image-main {
+  .hero-image-wrapper {
     max-width: 320px;
     margin: 0 auto;
   }
@@ -52,7 +52,8 @@
 
   /* Reviews */
   .review-card {
-    flex: 0 0 calc(50% - var(--space-3));
+    flex: 0 0 calc(50% - var(--space-3)) !important;
+    max-width: calc(50% - var(--space-3)) !important;
   }
 
   /* Footer */
@@ -88,9 +89,7 @@
     gap: var(--space-6);
   }
 
-  .hero-float-card {
-    display: none;
-  }
+
 
   /* Grids */
   .grid-4,
@@ -110,7 +109,8 @@
 
   /* Reviews */
   .review-card {
-    flex: 0 0 calc(100% - var(--space-4));
+    flex: 0 0 calc(100% - var(--space-4)) !important;
+    max-width: calc(100% - var(--space-4)) !important;
     padding: var(--space-6);
   }
 
@@ -223,7 +223,7 @@
     align-items: stretch;
   }
 
-  .hero-image-main {
+  .hero-image-wrapper {
     max-width: 250px;
     margin: 0 auto;
   }
@@ -328,7 +328,7 @@
 
   /* Gallery masonry */
   .masonry-grid {
-    columns: 1;
+    columns: 2;
   }
 
   /* Cards */

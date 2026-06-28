@@ -112,9 +112,16 @@
   justify-content: center;
 }
 
-.hero-image-main {
+.hero-image-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
   width: 85%;
   max-width: 450px;
+}
+
+.hero-image-main {
+  width: 100%;
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
   overflow: hidden;
