@@ -4,6 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   root: '.',
   build: {
+    cssCodeSplit: false,
     outDir: 'dist',
     rollupOptions: {
       input: {
