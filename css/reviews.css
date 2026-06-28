@@ -1,0 +1,145 @@
+/* ============================================================
+   Mons Crochet — Reviews Slider
+   ============================================================ */
+
+.reviews-section {
+  overflow: hidden;
+}
+
+.reviews-slider-wrapper {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.reviews-track {
+  display: flex;
+  gap: var(--space-6);
+  transition: transform var(--duration-slow) var(--ease-out);
+  cursor: grab;
+}
+
+.reviews-track:active {
+  cursor: grabbing;
+}
+
+.review-card {
+  flex: 0 0 calc(33.333% - var(--space-4));
+  background: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.review-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+.review-quote {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-6);
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(216, 156, 164, 0.15);
+  pointer-events: none;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.review-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border-light);
+}
+
+.review-author {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.review-location {
+  font-size: var(--fs-xs);
+  color: var(--color-text-light);
+}
+
+.review-stars {
+  margin-bottom: var(--space-4);
+}
+
+.review-text {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+  font-style: italic;
+}
+
+/* ---- Slider Controls ---- */
+.reviews-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-10);
+}
+
+.reviews-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: var(--border);
+  background: var(--color-bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  color: var(--color-text-secondary);
+}
+
+.reviews-nav-btn:hover {
+  background: var(--color-btn);
+  border-color: var(--color-btn);
+  color: var(--color-text-white);
+}
+
+.reviews-nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.reviews-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.reviews-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  padding: 0;
+}
+
+.reviews-dot.active {
+  background: var(--color-accent-primary);
+  width: 24px;
+  border-radius: var(--radius-full);
+}

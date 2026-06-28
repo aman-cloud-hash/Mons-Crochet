@@ -1,0 +1,59 @@
+/* ============================================================
+   Mons Crochet — 404 Page
+   ============================================================ */
+
+.page-404 {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.page-404-content {
+  max-width: 500px;
+}
+
+.page-404-illustration {
+  margin-bottom: var(--space-8);
+}
+
+.page-404-yarn {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(216,156,164,0.15), rgba(201,143,101,0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.page-404-yarn svg {
+  width: 72px;
+  height: 72px;
+  color: var(--color-accent-primary);
+  opacity: 0.6;
+}
+
+.page-404 h1 {
+  font-size: var(--fs-5xl);
+  color: var(--color-accent-primary);
+  margin-bottom: var(--space-3);
+}
+
+.page-404 h2 {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.page-404 p {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-8);
+}
+
+.page-404 .btn {
+  margin: 0 var(--space-2);
+}

@@ -1,0 +1,146 @@
+/* ============================================================
+   Mons Crochet — Base Styles
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  line-height: var(--lh-normal);
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--fs-5xl);
+  letter-spacing: var(--ls-tight);
+}
+
+h2 {
+  font-size: var(--fs-3xl);
+}
+
+h3 {
+  font-size: var(--fs-2xl);
+}
+
+h4 {
+  font-size: var(--fs-xl);
+}
+
+h5 {
+  font-size: var(--fs-lg);
+}
+
+h6 {
+  font-size: var(--fs-md);
+}
+
+/* ---- Paragraphs ---- */
+p {
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+  font-size: var(--fs-base);
+}
+
+.lead {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--color-accent-secondary);
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-btn);
+}
+
+/* ---- Section headers ---- */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.section-subtitle {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-accent-primary);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-widest);
+  margin-bottom: var(--space-3);
+}
+
+.section-title {
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+  margin: var(--space-4) auto 0;
+  border-radius: var(--radius-full);
+}
+
+.section-desc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---- Dividers ---- */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+  border-radius: var(--radius-full);
+  margin: var(--space-4) auto;
+}
+
+/* ---- Utility ---- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-accent { color: var(--color-accent-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.fw-medium { font-weight: var(--fw-medium); }
+.fw-semibold { font-weight: var(--fw-semibold); }
+.fw-bold { font-weight: var(--fw-bold); }
+.italic { font-style: italic; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

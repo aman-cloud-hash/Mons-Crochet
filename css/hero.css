@@ -1,0 +1,235 @@
+/* ============================================================
+   Mons Crochet — Hero Section
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(253, 242, 233, 0.92) 0%,
+    rgba(255, 248, 243, 0.80) 40%,
+    rgba(255, 248, 243, 0.50) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: calc(var(--header-height) + var(--space-16)) var(--section-px) var(--space-16);
+  width: 100%;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: rgba(216, 156, 164, 0.12);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  color: var(--color-accent-primary);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  margin-bottom: var(--space-6);
+  border: 1px solid rgba(216, 156, 164, 0.2);
+}
+
+.hero-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero h1 {
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-6);
+  color: var(--color-text-primary);
+}
+
+.hero h1 .accent {
+  color: var(--color-accent-primary);
+  font-style: italic;
+}
+
+.hero-subtitle {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-8);
+  max-width: 480px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  gap: var(--space-10);
+  margin-top: var(--space-10);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.hero-stat-item {
+  text-align: left;
+}
+
+.hero-stat-number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* ---- Hero image side ---- */
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-main {
+  width: 85%;
+  max-width: 450px;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-float-card {
+  position: absolute;
+  background: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-float-card.card-1 {
+  bottom: var(--space-8);
+  left: -var(--space-8);
+  animation-delay: 0s;
+}
+
+.hero-float-card.card-2 {
+  top: var(--space-12);
+  right: -var(--space-6);
+  animation-delay: 1.5s;
+}
+
+.hero-float-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(216,156,164,0.15), rgba(201,143,101,0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-float-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent-primary);
+}
+
+.hero-float-text strong {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--color-text-primary);
+  font-weight: var(--fw-semibold);
+}
+
+.hero-float-text span {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+
+/* ---- Decorative elements ---- */
+.hero-decor {
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-decor-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 156, 164, 0.08) 0%, transparent 70%);
+  bottom: -100px;
+  right: 5%;
+}
+
+.hero-decor-dots {
+  width: 100px;
+  height: 100px;
+  top: 30%;
+  left: 5%;
+  background-image: radial-gradient(circle, var(--color-accent-primary) 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.15;
+}
+
+/* ---- Parallax ---- */
+.hero-parallax {
+  will-change: transform;
+}

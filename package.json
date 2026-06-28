@@ -1,0 +1,14 @@
+{
+  "name": "mons-crochet",
+  "version": "1.0.0",
+  "description": "Premium handmade crochet e-commerce website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

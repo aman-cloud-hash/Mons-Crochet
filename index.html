@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta -->
+  <title>Mons Crochet — Handmade Crochet Creations Made With Love</title>
+  <meta name="description" content="Discover unique handcrafted crochet products at Mons Crochet. Beautiful flowers, bouquets, keychains, home decor and gift hampers made with love and premium quality yarn.">
+  <meta name="keywords" content="handmade crochet, crochet flowers, crochet bouquet, crochet gifts, custom crochet, handcrafted, yarn art">
+  <meta name="author" content="Mons Crochet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mons Crochet — Handmade Crochet Creations Made With Love">
+  <meta property="og:description" content="Discover unique handcrafted crochet products. Beautiful flowers, bouquets, keychains, home decor and gift hampers.">
+  <meta property="og:image" content="assets/images/hero.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://monscrochet.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mons Crochet — Handmade Crochet Creations Made With Love">
+  <meta name="twitter:description" content="Discover unique handcrafted crochet products made with love.">
+  <meta name="twitter:image" content="assets/images/hero.png">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/floating-buttons.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mons Crochet",
+    "description": "Handmade crochet creations made with love — flowers, bouquets, keychains, home decor and gifts.",
+    "image": "assets/images/hero.png",
+    "url": "https://monscrochet.com",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://instagram.com/monscrochet",
+      "https://facebook.com/monscrochet"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== PAGE LOADER ========== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-yarn"></div>
+    <span class="loader-text">Mons Crochet</span>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Mons Crochet Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="logo-text">
+            Mons Crochet
+            <span>Handmade With Love</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" id="navDesktop" aria-label="Main Navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="categories.html">Categories</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-cart" id="cartToggle" aria-label="Open Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+            <div class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== MOBILE DRAWER ========== -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-overlay" id="drawerOverlay"></div>
+      <div class="drawer-content">
+        <nav class="drawer-nav" aria-label="Mobile Navigation">
+          <a href="index.html">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="shop.html">Shop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="categories.html">Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="gallery.html">Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="about.html">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="contact.html">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        </nav>
+        <div class="drawer-social">
+          <a href="https://instagram.com/monscrochet" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/monscrochet" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- ========== HERO SECTION ========== -->
+      <section class="hero" id="hero">
+        <div class="hero-bg hero-parallax">
+          <img src="assets/images/hero.png" alt="Beautiful handmade crochet creations by Mons Crochet" loading="eager" fetchpriority="high">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <div class="hero-badge animate-on-scroll">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Handcrafted With Love
+              </div>
+              <h1 class="animate-on-scroll animate-delay-1">Handmade Crochet Creations <span class="accent">Made With Love</span></h1>
+              <p class="hero-subtitle animate-on-scroll animate-delay-2">Unique handcrafted crochet products made carefully for your home, gifts and everyday style.</p>
+              <div class="hero-buttons animate-on-scroll animate-delay-3">
+                <a href="shop.html" class="btn btn-primary btn-lg" id="heroShopBtn">Shop Now</a>
+                <a href="categories.html" class="btn btn-secondary btn-lg" id="heroExploreBtn">Explore Collection</a>
+              </div>
+              <div class="hero-stats animate-on-scroll animate-delay-4">
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">500+</div>
+                  <div class="hero-stat-label">Happy Customers</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">200+</div>
+                  <div class="hero-stat-label">Products Made</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">100%</div>
+                  <div class="hero-stat-label">Handmade</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image animate-on-scroll animate-delay-2">
+              <div class="hero-image-main">
+                <img src="assets/images/prod-rose-bouquet.png" alt="Handmade crochet rose bouquet" loading="eager">
+              </div>
+              <div class="hero-float-card card-1" style="bottom:2rem;left:-2rem;">
+                <div class="hero-float-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="hero-float-text">
+                  <strong>Made With Love</strong>
+                  <span>Every stitch counts</span>
+                </div>
+              </div>
+              <div class="hero-float-card card-2" style="top:3rem;right:-1.5rem;">
+                <div class="hero-float-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="hero-float-text">
+                  <strong>5-Star Rated</strong>
+                  <span>500+ Reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative -->
+        <div class="hero-decor hero-decor-circle"></div>
+        <div class="hero-decor hero-decor-dots"></div>
+      </section>
+
+      <!-- ========== FEATURED CATEGORIES ========== -->
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Browse Collection</span>
+            <h2 class="section-title">Featured Categories</h2>
+            <p class="section-desc">Explore our beautiful range of handcrafted crochet creations, each made with care and premium quality yarn.</p>
+          </div>
+
+          <div class="grid grid-3" id="categoriesGrid">
+            <!-- Crochet Flowers -->
+            <a href="categories.html#flowers" class="category-card animate-on-scroll animate-delay-1">
+              <img src="assets/images/cat-flowers.png" alt="Handmade crochet flowers" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3 class="category-card-title">Crochet Flowers</h3>
+              </div>
+            </a>
+
+            <!-- Bouquets -->
+            <a href="categories.html#bouquets" class="category-card animate-on-scroll animate-delay-2">
+              <img src="assets/images/cat-bouquets.png" alt="Handmade crochet bouquets" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="category-card-title">Bouquets</h3>
+              </div>
+            </a>
+
+            <!-- Keychains -->
+            <a href="categories.html#keychains" class="category-card animate-on-scroll animate-delay-3">
+              <img src="assets/images/cat-keychains.png" alt="Handmade crochet keychains" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                </div>
+                <h3 class="category-card-title">Keychains</h3>
+              </div>
+            </a>
+
+            <!-- Home Decor -->
+            <a href="categories.html#homedecor" class="category-card animate-on-scroll animate-delay-1">
+              <img src="assets/images/cat-homedecor.png" alt="Handmade crochet home decor" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3 class="category-card-title">Home Decor</h3>
+              </div>
+            </a>
+
+            <!-- Gift Hampers -->
+            <a href="categories.html#gifts" class="category-card animate-on-scroll animate-delay-2">
+              <img src="assets/images/cat-gifts.png" alt="Handmade crochet gift hampers" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                </div>
+                <h3 class="category-card-title">Gift Hampers</h3>
+              </div>
+            </a>
+
+            <!-- Custom Orders -->
+            <a href="custom-orders.html" class="category-card animate-on-scroll animate-delay-3">
+              <img src="assets/images/cat-custom.png" alt="Custom crochet orders" loading="lazy">
+              <div class="category-card-overlay">
+                <div class="category-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <h3 class="category-card-title">Custom Orders</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== BEST SELLERS ========== -->
+      <section class="section section-alt" id="bestSellers">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Top Picks</span>
+            <h2 class="section-title">Best Sellers</h2>
+            <p class="section-desc">Our most loved handcrafted crochet creations, chosen by customers who adore unique, handmade gifts.</p>
+          </div>
+
+          <div class="grid grid-4" id="productsGrid">
+            <!-- Product 1 -->
+            <div class="product-card animate-on-scroll animate-delay-1" data-product-id="1">
+              <div class="product-card-img">
+                <img src="assets/images/prod-rose-bouquet.png" alt="Rose Bouquet - Dusty Pink" loading="lazy">
+                <span class="product-badge badge-new">New</span>
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Bouquets</span>
+                <h4 class="product-card-name">Rose Bouquet — Dusty Pink</h4>
+                <p class="product-card-desc">A beautiful handcrafted bouquet of six dusty pink crochet roses with green leaves.</p>
+                <div class="product-card-price">₹1,299</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=1" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="1" data-name="Rose Bouquet — Dusty Pink" data-price="1299" data-image="assets/images/prod-rose-bouquet.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card animate-on-scroll animate-delay-2" data-product-id="2">
+              <div class="product-card-img">
+                <img src="assets/images/prod-sunflower.png" alt="Sunflower in Ceramic Vase" loading="lazy">
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Flowers</span>
+                <h4 class="product-card-name">Sunflower in Ceramic Vase</h4>
+                <p class="product-card-desc">A cheerful handcrafted sunflower in a minimalist ceramic vase. Perfect desk companion.</p>
+                <div class="product-card-price">₹899</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=2" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="2" data-name="Sunflower in Ceramic Vase" data-price="899" data-image="assets/images/prod-sunflower.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card animate-on-scroll animate-delay-3" data-product-id="3">
+              <div class="product-card-img">
+                <img src="assets/images/prod-bear-keychain.png" alt="Teddy Bear Keychain" loading="lazy">
+                <span class="product-badge badge-sale">Popular</span>
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Keychains</span>
+                <h4 class="product-card-name">Teddy Bear Keychain</h4>
+                <p class="product-card-desc">Adorable mini crocheted teddy bear keychain in dusty rose. A perfect tiny companion.</p>
+                <div class="product-card-price">₹399</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=3" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="3" data-name="Teddy Bear Keychain" data-price="399" data-image="assets/images/prod-bear-keychain.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card animate-on-scroll animate-delay-4" data-product-id="4">
+              <div class="product-card-img">
+                <img src="assets/images/prod-tulip-set.png" alt="Tulip Collection Vase Set" loading="lazy">
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="4">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="4">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Flowers</span>
+                <h4 class="product-card-name">Tulip Collection — Pastel</h4>
+                <p class="product-card-desc">A vibrant set of pastel crocheted tulips arranged in a glass vase. Eternal springtime.</p>
+                <div class="product-card-price">₹1,599</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=4" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="4" data-name="Tulip Collection — Pastel" data-price="1599" data-image="assets/images/prod-tulip-set.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card animate-on-scroll animate-delay-1" data-product-id="5">
+              <div class="product-card-img">
+                <img src="assets/images/prod-basket.png" alt="Crochet Storage Basket" loading="lazy">
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Home Decor</span>
+                <h4 class="product-card-name">Storage Basket — Natural</h4>
+                <p class="product-card-desc">Sturdy handcrafted crochet basket in natural cream and caramel tones. Elegant storage.</p>
+                <div class="product-card-price">₹799</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=5" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="5" data-name="Storage Basket — Natural" data-price="799" data-image="assets/images/prod-basket.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card animate-on-scroll animate-delay-2" data-product-id="6">
+              <div class="product-card-img">
+                <img src="assets/images/prod-coasters.png" alt="Flower Coasters Set" loading="lazy">
+                <span class="product-badge badge-custom">Custom</span>
+                <div class="product-card-actions">
+                  <button class="action-btn tooltip wishlist-btn" data-tooltip="Add to Wishlist" aria-label="Add to Wishlist" data-product-id="6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </button>
+                  <button class="action-btn tooltip share-btn" data-tooltip="Share" aria-label="Share Product">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  </button>
+                  <button class="action-btn tooltip quick-view-btn" data-tooltip="Quick View" aria-label="Quick View" data-product-id="6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-category">Home Decor</span>
+                <h4 class="product-card-name">Flower Coasters Set of 4</h4>
+                <p class="product-card-desc">Elegant mandala-pattern crocheted coasters in soft pastel tones. Protect tables beautifully.</p>
+                <div class="product-card-price">₹499</div>
+                <div class="product-card-btns">
+                  <a href="product.html?id=6" class="btn btn-primary btn-sm">Buy Now</a>
+                  <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="6" data-name="Flower Coasters Set of 4" data-price="499" data-image="assets/images/prod-coasters.png">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center" style="margin-top:var(--space-10)">
+            <a href="shop.html" class="btn btn-secondary" id="viewAllBtn">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== WHY CHOOSE US ========== -->
+      <section class="section" id="whyChooseUs">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Our Promise</span>
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-desc">Every creation is made with passion, premium materials, and a dedication to bringing joy to your life.</p>
+          </div>
+
+          <div class="grid grid-4">
+            <div class="feature-card animate-on-scroll animate-delay-1">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4.97 0-9-2.24-9-5v-4c0-2.76 4.03-5 9-5s9 2.24 9 5v4c0 2.76-4.03 5-9 5z"/><path d="M12 8c4.97 0 9 2.24 9 5"/><path d="M3 13c0-2.76 4.03-5 9-5"/><circle cx="12" cy="13" r="1"/></svg>
+              </div>
+              <h4>100% Handmade</h4>
+              <p>Every product is carefully crocheted by hand, stitch by stitch, ensuring unique artistry in every piece.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll animate-delay-2">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <h4>Premium Quality Yarn</h4>
+              <p>We use only the finest quality yarns that are soft, durable, and retain their vibrant colors over time.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll animate-delay-3">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              </div>
+              <h4>Custom Orders Available</h4>
+              <p>Have a special vision? We love bringing your ideas to life with personalized, custom crochet creations.</p>
+            </div>
+
+            <div class="feature-card animate-on-scroll animate-delay-4">
+              <div class="feature-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <h4>Made With Love</h4>
+              <p>Each piece carries the warmth and care of its maker. We pour love into every creation we send out.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== GALLERY ========== -->
+      <section class="section section-alt" id="gallery">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Our Work</span>
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-desc">A glimpse into our handcrafted world — each piece tells a unique story.</p>
+          </div>
+
+          <div class="masonry-grid" id="galleryGrid">
+            <div class="masonry-item animate-on-scroll" data-gallery-index="0">
+              <img src="assets/images/cat-flowers.png" alt="Handmade crochet flowers arrangement" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="1">
+              <img src="assets/images/prod-rose-bouquet.png" alt="Rose bouquet crochet product" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="2">
+              <img src="assets/images/cat-bouquets.png" alt="Crochet bouquet collection" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="3">
+              <img src="assets/images/prod-bear-keychain.png" alt="Teddy bear crochet keychain" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="4">
+              <img src="assets/images/cat-homedecor.png" alt="Crochet home decor items" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="5">
+              <img src="assets/images/prod-tulip-set.png" alt="Tulip crochet collection" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="6">
+              <img src="assets/images/cat-gifts.png" alt="Crochet gift hampers" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="masonry-item animate-on-scroll" data-gallery-index="7">
+              <img src="assets/images/prod-coasters.png" alt="Crochet coasters set" loading="lazy">
+              <div class="masonry-overlay">
+                <div class="masonry-overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== LIGHTBOX ========== -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+      </div>
+
+      <!-- ========== CUSTOMER REVIEWS ========== -->
+      <section class="section reviews-section" id="reviews">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Testimonials</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-desc">Don't just take our word for it — hear from the people who love our handmade creations.</p>
+          </div>
+
+          <div class="reviews-slider-wrapper animate-on-scroll">
+            <div class="reviews-track" id="reviewsTrack">
+              <!-- Review 1 -->
+              <div class="review-card">
+                <span class="review-quote">"</span>
+                <div class="review-header">
+                  <img class="review-avatar" src="https://ui-avatars.com/api/?name=Priya+Sharma&background=D89CA4&color=fff&size=104" alt="Priya Sharma">
+                  <div>
+                    <div class="review-author">Priya Sharma</div>
+                    <div class="review-location">Mumbai, India</div>
+                  </div>
+                </div>
+                <div class="review-stars stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-text">The rose bouquet I ordered was absolutely stunning! The quality of the crochet work is incredible — you can tell each petal was made with such love and care. My mom cried when she received it as a gift!</p>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="review-card">
+                <span class="review-quote">"</span>
+                <div class="review-header">
+                  <img class="review-avatar" src="https://ui-avatars.com/api/?name=Ananya+Patel&background=C98F65&color=fff&size=104" alt="Ananya Patel">
+                  <div>
+                    <div class="review-author">Ananya Patel</div>
+                    <div class="review-location">Delhi, India</div>
+                  </div>
+                </div>
+                <div class="review-stars stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-text">I ordered a custom gift hamper for my sister's birthday. The packaging was gorgeous and the crochet keychains inside were so cute! Will definitely order again for every occasion.</p>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="review-card">
+                <span class="review-quote">"</span>
+                <div class="review-header">
+                  <img class="review-avatar" src="https://ui-avatars.com/api/?name=Sneha+Reddy&background=8FAF7C&color=fff&size=104" alt="Sneha Reddy">
+                  <div>
+                    <div class="review-author">Sneha Reddy</div>
+                    <div class="review-location">Bangalore, India</div>
+                  </div>
+                </div>
+                <div class="review-stars stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-text">The sunflower crochet is sitting on my desk and it brightens my day every single morning. The craftsmanship is unmatched. Mons Crochet truly makes art!</p>
+              </div>
+
+              <!-- Review 4 -->
+              <div class="review-card">
+                <span class="review-quote">"</span>
+                <div class="review-header">
+                  <img class="review-avatar" src="https://ui-avatars.com/api/?name=Riya+Kapoor&background=A66C4A&color=fff&size=104" alt="Riya Kapoor">
+                  <div>
+                    <div class="review-author">Riya Kapoor</div>
+                    <div class="review-location">Jaipur, India</div>
+                  </div>
+                </div>
+                <div class="review-stars stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-text">The crochet coasters are perfect! They match my kitchen perfectly and my guests always ask where I got them. Premium quality and such a thoughtful design. Love it!</p>
+              </div>
+
+              <!-- Review 5 -->
+              <div class="review-card">
+                <span class="review-quote">"</span>
+                <div class="review-header">
+                  <img class="review-avatar" src="https://ui-avatars.com/api/?name=Meera+Joshi&background=D89CA4&color=fff&size=104" alt="Meera Joshi">
+                  <div>
+                    <div class="review-author">Meera Joshi</div>
+                    <div class="review-location">Pune, India</div>
+                  </div>
+                </div>
+                <div class="review-stars stars">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-text">Ordered a tulip set for my living room and it's absolutely gorgeous. The colors are so soft and beautiful. Everyone thinks they're real flowers at first glance!</p>
+              </div>
+            </div>
+
+            <div class="reviews-controls">
+              <button class="reviews-nav-btn" id="reviewsPrev" aria-label="Previous review">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <div class="reviews-dots" id="reviewsDots"></div>
+              <button class="reviews-nav-btn" id="reviewsNext" aria-label="Next review">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== INSTAGRAM FEED ========== -->
+      <section class="section section-alt instagram-section" id="instagramFeed">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Follow Us</span>
+            <h2 class="section-title">Instagram</h2>
+          </div>
+
+          <div class="instagram-header animate-on-scroll">
+            <div class="instagram-handle">
+              <div class="instagram-handle-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="instagram-handle-text">
+                <strong>@monscrochet</strong>
+                <span>Follow us for daily inspiration</span>
+              </div>
+            </div>
+            <a href="https://instagram.com/monscrochet" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" id="followInstagramBtn">
+              Follow Us
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+
+          <div class="instagram-grid animate-on-scroll">
+            <div class="instagram-item">
+              <img src="assets/images/cat-flowers.png" alt="Instagram post - Crochet flowers" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <img src="assets/images/prod-rose-bouquet.png" alt="Instagram post - Rose bouquet" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <img src="assets/images/cat-keychains.png" alt="Instagram post - Keychains" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <img src="assets/images/prod-sunflower.png" alt="Instagram post - Sunflower" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <img src="assets/images/cat-gifts.png" alt="Instagram post - Gift hamper" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <img src="assets/images/prod-coasters.png" alt="Instagram post - Coasters" loading="lazy">
+              <div class="instagram-item-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT BRAND ========== -->
+      <section class="section" id="aboutBrand">
+        <div class="container">
+          <div class="about-brand-grid">
+            <div class="about-brand-image animate-on-scroll animate-slide-left">
+              <img src="assets/images/cat-custom.png" alt="Handmade crochet crafting process" loading="lazy">
+            </div>
+            <div class="about-brand-content animate-on-scroll animate-slide-right">
+              <span class="section-subtitle">Our Story</span>
+              <h3 class="section-title" style="text-align:left;">Crafted With Passion, Delivered With Love</h3>
+              <p>Mons Crochet was born from a deep love for the art of crocheting. What started as a hobby quickly blossomed into a passion for creating beautiful, handmade pieces that bring joy to everyday life.</p>
+              <p>Every product we create is made with premium quality yarn, carefully selected for softness, durability, and vibrant colors that last. From delicate flower bouquets to cozy home decor, each piece is a labour of love.</p>
+
+              <div class="about-brand-features">
+                <div class="about-brand-feature">
+                  <div class="about-brand-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <span>Ethically sourced premium yarn</span>
+                </div>
+                <div class="about-brand-feature">
+                  <div class="about-brand-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <span>Secure and eco-friendly packaging</span>
+                </div>
+                <div class="about-brand-feature">
+                  <div class="about-brand-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <span>Personalized custom orders welcome</span>
+                </div>
+                <div class="about-brand-feature">
+                  <div class="about-brand-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <span>Pan-India shipping available</span>
+                </div>
+              </div>
+
+              <a href="about.html" class="btn btn-primary" style="margin-top:var(--space-8);" id="learnMoreBtn">Learn More About Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FAQ ========== -->
+      <section class="section section-alt" id="faq">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Help</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">Find answers to common questions about our handmade crochet products.</p>
+          </div>
+
+          <div class="faq-list animate-on-scroll" id="faqList">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How long does it take to receive my order?
+                <span class="faq-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Since every product is handmade with care, standard orders typically take 5-7 working days to craft and ship. Custom orders may take 7-14 days depending on complexity. We'll keep you updated throughout the process!</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Can I request custom colors or designs?
+                <span class="faq-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Absolutely! We love creating custom pieces. Simply visit our Custom Orders page or reach out to us on WhatsApp with your ideas, preferred colors, and any reference images. We'll work together to bring your vision to life.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What type of yarn do you use?
+                <span class="faq-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">We use premium quality acrylic and cotton blend yarns that are soft, durable, hypoallergenic, and machine washable. Our yarns are carefully selected for their vibrant, long-lasting colors and gentle texture.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Do you ship internationally?
+                <span class="faq-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Currently, we ship pan-India with free shipping on orders above ₹999. International shipping is available on request — please contact us on WhatsApp for a shipping quote to your location.</div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How do I care for my crochet products?
+                <span class="faq-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">Most of our products can be gently hand washed with mild soap and laid flat to dry. Avoid wringing. For flower bouquets and decorative pieces, simply dust them gently or use a soft brush. They're designed to last beautifully!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT SECTION ========== -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-desc">Have a question or want to place a custom order? We'd love to hear from you!</p>
+          </div>
+
+          <div class="contact-grid animate-on-scroll">
+            <div class="contact-form-card">
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Your Name</label>
+                  <input type="text" class="form-input" id="contactName" name="name" placeholder="Enter your name" required>
+                  <div class="form-error" id="contactNameError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address</label>
+                  <input type="email" class="form-input" id="contactEmail" name="email" placeholder="Enter your email" required>
+                  <div class="form-error" id="contactEmailError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number</label>
+                  <input type="tel" class="form-input" id="contactPhone" name="phone" placeholder="Enter your phone number">
+                  <div class="form-error" id="contactPhoneError"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactMessage">Message</label>
+                  <textarea class="form-textarea" id="contactMessage" name="message" placeholder="Tell us what you have in mind..." required></textarea>
+                  <div class="form-error" id="contactMessageError"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" id="contactSubmitBtn" style="width:100%;">Send Message</button>
+                <div id="contactSuccess" class="form-success" style="text-align:center;margin-top:var(--space-4);display:none;">
+                  ✓ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                </div>
+              </form>
+            </div>
+
+            <div class="contact-map">
+              <div class="contact-map-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Google Map</span>
+                <span style="font-size:var(--fs-xs);">Location map will be embedded here</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <span class="footer-logo-text">Mons Crochet</span>
+            </div>
+            <p>Beautiful handmade crochet creations crafted with love and premium quality yarn. Each piece is a unique work of art.</p>
+            <div class="footer-social">
+              <a href="https://instagram.com/monscrochet" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com/monscrochet" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              </a>
+              <a href="https://pinterest.com/monscrochet" target="_blank" rel="noopener" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12a4 4 0 1 1 8 0c0 2.5-1.5 4.5-3 6l-1 4"/><path d="M12 12l-2 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="shop.html">Shop</a>
+              <a href="categories.html">Categories</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Categories</h5>
+            <div class="footer-links">
+              <a href="categories.html#flowers">Crochet Flowers</a>
+              <a href="categories.html#bouquets">Bouquets</a>
+              <a href="categories.html#keychains">Keychains</a>
+              <a href="categories.html#homedecor">Home Decor</a>
+              <a href="categories.html#gifts">Gift Hampers</a>
+              <a href="custom-orders.html">Custom Orders</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h5>Contact Us</h5>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 98765 43210</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@monscrochet.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <div class="footer-newsletter-inner">
+            <div>
+              <h5>Subscribe to Our Newsletter</h5>
+              <p>Get updates on new products, special offers, and crochet inspiration.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" class="form-input" placeholder="Enter your email" aria-label="Email for newsletter" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Mons Crochet. All Rights Reserved. Handmade With ❤️ in India.</p>
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="shipping-policy.html">Shipping Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+
+  <!-- ========== FLOATING BUTTONS ========== -->
+  <div class="floating-buttons" id="floatingButtons">
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="floating-btn floating-btn-whatsapp" aria-label="Chat on WhatsApp" id="floatingWhatsapp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+    <a href="tel:+919876543210" class="floating-btn floating-btn-call" aria-label="Call Us" id="floatingCall">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="https://instagram.com/monscrochet" target="_blank" rel="noopener" class="floating-btn floating-btn-instagram" aria-label="Follow on Instagram" id="floatingInstagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <button class="floating-btn floating-btn-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== MOBILE CTA BAR ========== -->
+  <div class="mobile-cta-bar" id="mobileCta">
+    <a href="tel:+919876543210" class="mobile-cta-btn mobile-cta-call" id="mobileCallBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="mobile-cta-btn mobile-cta-whatsapp" id="mobileWhatsappBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h4>Your Cart</h4>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody">
+      <div class="cart-drawer-empty" id="cartEmpty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p>Your cart is empty</p>
+        <a href="shop.html" class="btn btn-primary btn-sm">Browse Products</a>
+      </div>
+      <div id="cartItems"></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <a href="#" class="btn btn-primary" style="width:100%;" id="checkoutBtn">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- ========== QUICK VIEW MODAL ========== -->
+  <div class="quick-view-modal" id="quickViewModal" role="dialog" aria-label="Quick View" aria-hidden="true">
+    <div class="quick-view-overlay" id="quickViewOverlay"></div>
+    <div class="quick-view-content">
+      <button class="quick-view-close" id="quickViewClose" aria-label="Close Quick View">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="quick-view-image">
+        <img id="quickViewImg" src="" alt="Product quick view">
+      </div>
+      <div class="quick-view-info">
+        <span class="product-card-category" id="quickViewCategory"></span>
+        <h3 id="quickViewName"></h3>
+        <p class="product-card-desc" id="quickViewDesc"></p>
+        <div class="product-card-price" id="quickViewPrice"></div>
+        <div class="product-card-btns">
+          <a href="#" class="btn btn-primary" id="quickViewBuyBtn">Buy Now</a>
+          <button class="btn btn-secondary" id="quickViewCartBtn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TOAST ========== -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <span class="toast-text" id="toastText"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

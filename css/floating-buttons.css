@@ -1,0 +1,132 @@
+/* ============================================================
+   Mons Crochet — Floating Buttons
+   ============================================================ */
+
+/* ---- Desktop floating stack (bottom-right) ---- */
+.floating-buttons {
+  position: fixed;
+  bottom: var(--space-8);
+  right: var(--space-6);
+  z-index: var(--z-floating);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-base);
+  color: var(--color-text-white);
+  text-decoration: none;
+}
+
+.floating-btn:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: var(--shadow-xl);
+}
+
+.floating-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.floating-btn-whatsapp {
+  background: var(--color-whatsapp);
+}
+
+.floating-btn-call {
+  background: var(--color-btn);
+}
+
+.floating-btn-instagram {
+  background: linear-gradient(135deg, #833AB4, #E1306C, #F56040, #FCAF45);
+}
+
+.floating-btn-scroll-top {
+  width: 44px;
+  height: 44px;
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+  border: var(--border);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: var(--transition-base);
+}
+
+.floating-btn-scroll-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-btn-scroll-top:hover {
+  background: var(--color-btn);
+  color: var(--color-text-white);
+  border-color: var(--color-btn);
+}
+
+/* ---- Pulse animation for WhatsApp ---- */
+.floating-btn-whatsapp::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--color-whatsapp);
+  z-index: -1;
+  animation: pulse 2s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+/* ---- Mobile sticky CTA bar ---- */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-floating);
+  background: var(--color-bg-white);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  padding: var(--space-3) var(--space-4);
+  gap: var(--space-3);
+}
+
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.mobile-cta-call {
+  background: var(--color-btn);
+  color: var(--color-text-white);
+}
+
+.mobile-cta-whatsapp {
+  background: var(--color-whatsapp);
+  color: var(--color-text-white);
+}
+
+.mobile-cta-btn svg {
+  width: 18px;
+  height: 18px;
+}

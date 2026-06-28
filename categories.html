@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Mons Crochet | Shop by Category</title>
+  <meta name="description" content="Explore our beautiful handmade crochet categories. Flowers, bouquets, keychains, home decor, and custom hampers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/floating-buttons.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-yarn"></div>
+    <span class="loader-text">Mons Crochet</span>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Mons Crochet Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="logo-text">
+            Mons Crochet
+            <span>Handmade With Love</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" id="navDesktop">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="categories.html" class="active">Categories</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-cart" id="cartToggle" aria-label="Open Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+            <div class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-overlay" id="drawerOverlay"></div>
+      <div class="drawer-content">
+        <nav class="drawer-nav">
+          <a href="index.html">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="shop.html">Shop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="categories.html">Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="gallery.html">Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="about.html">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="contact.html">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main style="padding-top: var(--header-height);">
+      <section class="page-banner" style="padding: var(--space-8) 0 var(--space-6);">
+        <div class="container">
+          <h1>Product Categories</h1>
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a> <span class="separator">/</span> 
+            <span>Categories</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid grid-3">
+            <!-- Crochet Flowers -->
+            <div class="card animate-on-scroll" id="flowers">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-flowers.png" alt="Crochet Flowers" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Crochet Flowers</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">Single handcrafted flowers including tulips, daisies, sunflowers, and roses. Perfect for adding a soft decorative touch to any room.</p>
+                <a href="shop.html?category=Flowers" class="btn btn-secondary btn-sm" style="width: 100%;">View Flowers</a>
+              </div>
+            </div>
+
+            <!-- Bouquets -->
+            <div class="card animate-on-scroll animate-delay-1" id="bouquets">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-bouquets.png" alt="Crochet Bouquets" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Crochet Bouquets</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">Elegantly wrapped bouquets combining multiple hand-crocheted flowers. An eternal gift that never fades, wrapped in premium paper.</p>
+                <a href="shop.html?category=Bouquets" class="btn btn-secondary btn-sm" style="width: 100%;">View Bouquets</a>
+              </div>
+            </div>
+
+            <!-- Keychains -->
+            <div class="card animate-on-scroll animate-delay-2" id="keychains">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-keychains.png" alt="Crochet Keychains" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Keychains</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">Charming, cute amigurumi keychains including animals, flowers, and custom shapes. Complete with high-quality gold hardware.</p>
+                <a href="shop.html?category=Keychains" class="btn btn-secondary btn-sm" style="width: 100%;">View Keychains</a>
+              </div>
+            </div>
+
+            <!-- Home Decor -->
+            <div class="card animate-on-scroll" id="homedecor">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-homedecor.png" alt="Home Decor" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Home Decor</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">Handmade utility baskets, throw pillows, coasters, and table mats. Enhance your living space with unique textures and warm colors.</p>
+                <a href="shop.html?category=Home%20Decor" class="btn btn-secondary btn-sm" style="width: 100%;">View Home Decor</a>
+              </div>
+            </div>
+
+            <!-- Gift Hampers -->
+            <div class="card animate-on-scroll animate-delay-1" id="gifts">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-gifts.png" alt="Gift Hampers" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Gift Hampers</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">Curated premium gift boxes containing crochet flowers, keychains, greeting cards, and scented dried flower vials. Made to impress.</p>
+                <a href="shop.html?category=Gifts" class="btn btn-secondary btn-sm" style="width: 100%;">View Gift Hampers</a>
+              </div>
+            </div>
+
+            <!-- Custom Orders -->
+            <div class="card animate-on-scroll animate-delay-2" id="custom">
+              <div class="product-card-img" style="aspect-ratio: 16/10;">
+                <img src="assets/images/cat-custom.png" alt="Custom Orders" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h3 style="margin-bottom: var(--space-2);">Custom Orders</h3>
+                <p style="margin-bottom: var(--space-4); font-size: var(--fs-sm);">We craft custom designs tailored to your taste, color preferences, and size requirements. Perfect for weddings, corporate gifting, and events.</p>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm" style="width: 100%;">Request Customization</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 Mons Crochet. All Rights Reserved. Handmade With ❤️ in India.</p>
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="shipping-policy.html">Shipping Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Floating Mobile Buttons -->
+  <div class="floating-buttons" id="floatingButtons">
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="floating-btn floating-btn-whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+    <a href="tel:+919876543210" class="floating-btn floating-btn-call" aria-label="Call Us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <button class="floating-btn floating-btn-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile CTA -->
+  <div class="mobile-cta-bar" id="mobileCta">
+    <a href="tel:+919876543210" class="mobile-cta-btn mobile-cta-call">📞 Call Now</a>
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="mobile-cta-btn mobile-cta-whatsapp">💬 WhatsApp</a>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h4>Your Cart</h4>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody">
+      <div class="cart-drawer-empty" id="cartEmpty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p>Your cart is empty</p>
+        <a href="shop.html" class="btn btn-primary btn-sm">Browse Products</a>
+      </div>
+      <div id="cartItems"></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <a href="#" class="btn btn-primary" style="width:100%;" id="checkoutBtn">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <span class="toast-text" id="toastText"></span>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

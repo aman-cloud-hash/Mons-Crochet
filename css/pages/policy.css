@@ -1,0 +1,56 @@
+/* ============================================================
+   Mons Crochet — Policy Pages
+   ============================================================ */
+
+.policy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--section-px);
+}
+
+.policy-content h2 {
+  font-size: var(--fs-2xl);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.policy-content h3 {
+  font-size: var(--fs-xl);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+.policy-content p {
+  margin-bottom: var(--space-4);
+  line-height: var(--lh-relaxed);
+}
+
+.policy-content ul {
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-6);
+}
+
+.policy-content li {
+  margin-bottom: var(--space-2);
+  line-height: var(--lh-relaxed);
+  color: var(--color-text-secondary);
+  position: relative;
+  list-style: disc;
+}
+
+.policy-content a {
+  color: var(--color-accent-primary);
+  text-decoration: underline;
+}
+
+.policy-content a:hover {
+  color: var(--color-btn);
+}
+
+.policy-meta {
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-light);
+}
