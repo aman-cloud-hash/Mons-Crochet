@@ -7,6 +7,10 @@ const PRODUCTS = [
   { id: '4', name: 'Tulip Collection — Pastel', category: 'Flowers', price: 1599, desc: 'A vibrant set of pastel crocheted tulips in a glass vase.', image: 'assets/images/prod-tulip-set.png', label: '' },
   { id: '5', name: 'Storage Basket — Natural', category: 'Home Decor', price: 799, desc: 'Sturdy handcrafted crochet basket in natural tones.', image: 'assets/images/prod-basket.png', label: '' },
   { id: '6', name: 'Flower Coasters Set of 4', category: 'Home Decor', price: 499, desc: 'Elegant mandala-pattern crocheted coasters in pastel tones.', image: 'assets/images/prod-coasters.png', label: 'Custom' },
+  { id: '7', name: 'Daisy Bouquet — Sunshine', category: 'Bouquets', price: 1199, desc: 'Bright and cheerful daisy bouquet made with love.', image: 'assets/images/cat-bouquets.png', label: '' },
+  { id: '8', name: 'Lavender Stems', category: 'Flowers', price: 599, desc: 'A set of delicate crochet lavender stems.', image: 'assets/images/cat-flowers.png', label: 'Popular' },
+  { id: '9', name: 'Strawberry Keychain', category: 'Keychains', price: 299, desc: 'Cute mini crocheted strawberry keychain.', image: 'assets/images/cat-keychains.png', label: 'New' },
+  { id: '10', name: 'Festival Gift Box', category: 'Gift Hampers', price: 2499, desc: 'A beautiful premium gift box for your loved ones.', image: 'assets/images/cat-gifts.png', label: 'Custom' },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
