@@ -19,6 +19,7 @@ export default defineConfig({
         terms: resolve(__dirname, 'terms.html'),
         shippingPolicy: resolve(__dirname, 'shipping-policy.html'),
         refundPolicy: resolve(__dirname, 'refund-policy.html'),
+        checkout: resolve(__dirname, 'checkout.html'),
         notFound: resolve(__dirname, '404.html'),
       },
     },

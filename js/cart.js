@@ -116,6 +116,12 @@ export function initCart() {
     addToCart(id, name, price, image);
   });
 
+  // Listen for custom cart-cleared event
+  document.addEventListener('cart-cleared', () => {
+    localStorage.removeItem(CART_KEY);
+    updateCartUI();
+  });
+
   // Cart drawer toggle
   const cartToggle = document.getElementById('cartToggle');
   const cartDrawer = document.getElementById('cartDrawer');

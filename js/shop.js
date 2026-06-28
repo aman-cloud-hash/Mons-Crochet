@@ -1,17 +1,7 @@
 import { initAnimations } from './animations.js';
+import { PRODUCTS } from './products-db.js';
 
-const PRODUCTS = [
-  { id: '1', name: 'Rose Bouquet — Dusty Pink', category: 'Bouquets', price: 1299, desc: 'Beautiful, long-lasting pink crochet roses. Hand-knitted with high-quality yarn. Perfect for gifting.', image: 'assets/images/prod-rose-bouquet.png', label: 'New' },
-  { id: '2', name: 'Sunflower in Ceramic Vase', category: 'Flowers', price: 899, desc: 'A bright, handcrafted crochet sunflower in a small vase. A cute decor piece for desks and shelves.', image: 'assets/images/prod-sunflower.png', label: '' },
-  { id: '3', name: 'Teddy Bear Keychain', category: 'Keychains', price: 399, desc: 'Adorable handmade crochet teddy bear keychain. Soft, lightweight, and perfect to hang on bags.', image: 'assets/images/prod-bear-keychain.png', label: 'Popular' },
-  { id: '4', name: 'Tulip Collection — Pastel', category: 'Flowers', price: 1599, desc: 'A gorgeous set of colorful crochet tulips. Perfect home decor that stays fresh forever.', image: 'assets/images/prod-tulip-set.png', label: '' },
-  { id: '5', name: 'Storage Basket — Natural', category: 'Home Decor', price: 799, desc: 'Handmade crochet storage basket. Useful for organizing cosmetics, keys, and daily items.', image: 'assets/images/prod-basket.png', label: '' },
-  { id: '6', name: 'Flower Coasters Set of 4', category: 'Home Decor', price: 499, desc: 'Set of 4 handmade crochet coasters. Soft, absorbable, and protects tables beautifully.', image: 'assets/images/prod-coasters.png', label: 'Custom' },
-  { id: '7', name: 'Daisy Bouquet — Sunshine', category: 'Bouquets', price: 1199, desc: 'Bright and cheerful handmade daisy bouquet. Bring a smile to your loved ones.', image: 'assets/images/cat-bouquets.png', label: '' },
-  { id: '8', name: 'Lavender Stems', category: 'Flowers', price: 599, desc: 'Delicate crochet lavender stems. Great for adding color and class to any room.', image: 'assets/images/cat-flowers.png', label: 'Popular' },
-  { id: '9', name: 'Strawberry Keychain', category: 'Keychains', price: 299, desc: 'Cute mini crochet strawberry keychain. Add it to your keys or backpacks.', image: 'assets/images/cat-keychains.png', label: 'New' },
-  { id: '10', name: 'Festival Gift Box', category: 'Gift Hampers', price: 2499, desc: 'A premium handmade gift box packed with adorable crochet items.', image: 'assets/images/cat-gifts.png', label: 'Custom' },
-];
+const PRODUCTS_ARRAY = Object.values(PRODUCTS);
 
 document.addEventListener('DOMContentLoaded', () => {
   const productsGrid = document.querySelector('.products-grid');
@@ -41,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="action-btn wishlist-btn" data-product-id="${p.id}" aria-label="Add to Wishlist">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </button>
+            <button class="action-btn share-btn" data-product-id="${p.id}" aria-label="Share Product">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
             <button class="action-btn quick-view-btn" data-product-id="${p.id}" aria-label="Quick View">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
@@ -52,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="product-card-desc">${p.desc}</p>
           <div class="product-card-price">₹${p.price.toLocaleString('en-IN')}</div>
           <div class="product-card-btns">
-            <a href="product.html?id=${p.id}" class="btn btn-primary btn-sm">Buy Now</a>
+            <button class="btn btn-primary btn-sm buy-now-btn" data-product-id="${p.id}">Buy Now</button>
             <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="${p.id}" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}">Add to Cart</button>
           </div>
         </div>
@@ -69,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Filter & Sort Logic
   function getFilteredAndSorted() {
-    let result = [...PRODUCTS];
+    let result = [...PRODUCTS_ARRAY];
 
     // Filter by category
     if (activeCategory.toLowerCase() !== 'all') {

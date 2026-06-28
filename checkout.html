@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — Mons Crochet</title>
+  <meta name="description" content="Complete your order at Mons Crochet. Beautiful handmade crochet creations delivered to your door.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/floating-buttons.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <style>
+    .checkout-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .checkout-card {
+      background: var(--color-bg-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--color-border-light);
+    }
+    .checkout-section-title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-xl);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-6);
+      border-bottom: 1px solid var(--color-border-light);
+      padding-bottom: var(--space-3);
+      text-align: left;
+    }
+    .form-group-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .order-summary-item {
+      display: flex;
+      gap: var(--space-4);
+      padding: var(--space-4) 0;
+      border-bottom: 1px solid var(--color-border-light);
+      align-items: center;
+    }
+    .order-summary-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border-light);
+    }
+    .order-summary-info {
+      flex: 1;
+      text-align: left;
+    }
+    .order-summary-name {
+      font-weight: var(--fw-medium);
+      color: var(--color-text-primary);
+      font-size: var(--fs-sm);
+    }
+    .order-summary-qty {
+      font-size: var(--fs-xs);
+      color: var(--color-text-light);
+      margin-top: 2px;
+    }
+    .order-summary-price {
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-primary);
+      font-size: var(--fs-sm);
+    }
+    .price-summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--space-3);
+      font-size: var(--fs-sm);
+      color: var(--color-text-secondary);
+    }
+    .price-summary-row.total {
+      border-top: 1px solid var(--color-border-light);
+      padding-top: var(--space-4);
+      margin-top: var(--space-4);
+      font-weight: var(--fw-bold);
+      color: var(--color-text-primary);
+      font-size: var(--fs-md);
+    }
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .payment-option {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-4);
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      text-align: left;
+    }
+    .payment-option.active {
+      border-color: var(--color-accent-primary);
+      background: rgba(216, 156, 164, 0.05);
+    }
+    .payment-option input {
+      margin: 0;
+    }
+    .payment-option-text h5 {
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-primary);
+      font-size: var(--fs-sm);
+    }
+    .payment-option-text p {
+      font-size: var(--fs-xs);
+      color: var(--color-text-secondary);
+      margin-top: 2px;
+    }
+    @media (max-width: 768px) {
+      .checkout-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+      .checkout-card {
+        padding: var(--space-5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-yarn"></div>
+    <span class="loader-text">Mons Crochet</span>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Mons Crochet Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="logo-text">
+            Mons Crochet
+            <span>Handmade With Love</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" id="navDesktop">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="categories.html">Categories</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-cart" id="cartToggle" aria-label="Open Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+            <div class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-overlay" id="drawerOverlay"></div>
+      <div class="drawer-content">
+        <nav class="drawer-nav">
+          <a href="index.html">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="shop.html">Shop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="categories.html">Categories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="gallery.html">Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="about.html">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <a href="contact.html">Contact <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main style="padding-top: var(--header-height);">
+      <section class="page-banner" style="padding: var(--space-8) 0 var(--space-6);">
+        <div class="container">
+          <h1>Checkout</h1>
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a> <span class="separator">/</span> 
+            <span>Checkout</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Empty State -->
+          <div id="checkoutEmptyState" style="display:none; text-align:center; padding:5rem 0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64" style="opacity:0.3; margin-bottom:var(--space-4);"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <h3>Your Cart is Empty</h3>
+            <p style="color:var(--color-text-secondary); margin-bottom:var(--space-6); margin-top: var(--space-2);">You cannot checkout without adding products first.</p>
+            <a href="shop.html" class="btn btn-primary">Browse Shop</a>
+          </div>
+
+          <!-- Checkout Content -->
+          <div class="checkout-grid" id="checkoutContent">
+            <!-- Left Column: Shipping Address & Payment -->
+            <form class="checkout-card animate-on-scroll" id="checkoutForm" style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <h3 class="checkout-section-title">Shipping Information</h3>
+              
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input type="text" id="firstName" class="form-input" required placeholder="John">
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input type="text" id="lastName" class="form-input" required placeholder="Doe">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone" class="form-input" required placeholder="8604600292">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" class="form-input" required placeholder="john@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="address" class="form-label">Street Address *</label>
+                <input type="text" id="address" class="form-input" required placeholder="Flat / House No. / Street">
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="city" class="form-label">City *</label>
+                  <input type="text" id="city" class="form-input" required placeholder="Mumbai">
+                </div>
+                <div class="form-group">
+                  <label for="pincode" class="form-label">PIN Code *</label>
+                  <input type="text" id="pincode" class="form-input" required placeholder="400001" pattern="[0-9]{6}">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="state" class="form-label">State *</label>
+                <input type="text" id="state" class="form-input" required placeholder="Maharashtra">
+              </div>
+
+              <h3 class="checkout-section-title" style="margin-top:var(--space-6);">Payment Method</h3>
+              <div class="payment-options">
+                <div class="payment-option active" data-method="cod">
+                  <input type="radio" name="paymentMethod" id="methodCod" checked>
+                  <div class="payment-option-text">
+                    <h5>Cash on Delivery (COD)</h5>
+                    <p>Pay with cash upon delivery of your handcrafted item.</p>
+                  </div>
+                </div>
+                <div class="payment-option" data-method="upi">
+                  <input type="radio" name="paymentMethod" id="methodUpi">
+                  <div class="payment-option-text">
+                    <h5>UPI (Google Pay / PhonePe / Paytm)</h5>
+                    <p>Pay securely via UPI code before shipment.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+                Confirm Order & Order on WhatsApp
+              </button>
+            </form>
+
+            <!-- Right Column: Order Summary -->
+            <div class="checkout-card animate-on-scroll" style="display: flex; flex-direction: column; gap: var(--space-2);">
+              <h3 class="checkout-section-title">Order Summary</h3>
+              
+              <div id="checkoutSummaryItems" style="max-height: 400px; overflow-y: auto;">
+                <!-- Summary items rendered dynamically -->
+              </div>
+
+              <div class="price-summary-row" style="margin-top: var(--space-4);">
+                <span>Subtotal</span>
+                <span id="summarySubtotal">₹0</span>
+              </div>
+              <div class="price-summary-row">
+                <span>Shipping</span>
+                <span style="color: var(--color-success); font-weight: 500;">FREE</span>
+              </div>
+              <div class="price-summary-row total">
+                <span>Total Amount</span>
+                <span id="summaryTotal">₹0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 Mons Crochet. All Rights Reserved. Handmade With ❤️ in India.</p>
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="shipping-policy.html">Shipping Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Cart Drawer overlays and quick view -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <span class="toast-text" id="toastText"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module">
+    import { PRODUCTS } from './js/products-db.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const CART_KEY = 'mons_crochet_cart';
+      
+      function getCart() {
+        try {
+          return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+        } catch {
+          return [];
+        }
+      }
+
+      function clearCart() {
+        localStorage.removeItem(CART_KEY);
+        // Dispatch custom cart-cleared event to update badge in header
+        document.dispatchEvent(new CustomEvent('cart-cleared'));
+      }
+
+      const cart = getCart();
+      const checkoutEmptyState = document.getElementById('checkoutEmptyState');
+      const checkoutContent = document.getElementById('checkoutContent');
+      const summaryItems = document.getElementById('checkoutSummaryItems');
+      const summarySubtotal = document.getElementById('summarySubtotal');
+      const summaryTotal = document.getElementById('summaryTotal');
+      const checkoutForm = document.getElementById('checkoutForm');
+      const paymentOptions = document.querySelectorAll('.payment-option');
+
+      // 1. Toggle empty states
+      if (cart.length === 0) {
+        checkoutEmptyState.style.display = 'block';
+        checkoutContent.style.display = 'none';
+        return;
+      }
+
+      checkoutEmptyState.style.display = 'none';
+      checkoutContent.style.display = 'grid';
+
+      // 2. Render summary items
+      let total = 0;
+      summaryItems.innerHTML = cart.map(item => {
+        const cost = item.price * item.qty;
+        total += cost;
+        return `
+          <div class="order-summary-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="order-summary-info">
+              <div class="order-summary-name">${item.name}</div>
+              <div class="order-summary-qty">Qty: ${item.qty}</div>
+            </div>
+            <div class="order-summary-price">₹${cost.toLocaleString('en-IN')}</div>
+          </div>
+        `;
+      }).join('');
+
+      summarySubtotal.textContent = `₹${total.toLocaleString('en-IN')}`;
+      summaryTotal.textContent = `₹${total.toLocaleString('en-IN')}`;
+
+      // 3. Payment options toggling
+      paymentOptions.forEach(opt => {
+        opt.addEventListener('click', () => {
+          paymentOptions.forEach(o => o.classList.remove('active'));
+          opt.classList.add('active');
+          const radio = opt.querySelector('input[type="radio"]');
+          if (radio) radio.checked = true;
+        });
+      });
+
+      // 4. Form Submit & Send to WhatsApp
+      checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const pincode = document.getElementById('pincode').value.trim();
+        const state = document.getElementById('state').value.trim();
+        
+        const activePaymentEl = document.querySelector('.payment-option.active');
+        const paymentMethod = activePaymentEl.dataset.method === 'cod' ? 'Cash on Delivery' : 'UPI';
+
+        // Construct items text
+        let itemsText = '';
+        cart.forEach((item, index) => {
+          itemsText += `${index + 1}. ${item.name} (Qty: ${item.qty}) - ₹${(item.price * item.qty).toLocaleString('en-IN')}\n`;
+        });
+
+        // Construct message
+        const message = `Hello Mons Crochet! 🌸\n\nI would like to place an order for the following items:\n\n${itemsText}\n*Total Amount:* ₹${total.toLocaleString('en-IN')}\n*Payment Method:* ${paymentMethod}\n\n*Shipping Address:*\nName: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\nAddress: ${address}, ${city}, ${state} - ${pincode}\n\nPlease confirm my order. Thank you!`;
+
+        // URL encode
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Clear cart
+        clearCart();
+
+        // Redirect to WhatsApp
+        window.location.href = `https://wa.me/918604600292?text=${encodedMessage}`;
+      });
+    });
+  </script>
+</body>
+</html>

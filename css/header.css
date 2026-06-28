@@ -69,14 +69,7 @@
 }
 
 .logo-text span {
-  display: block;
-  font-family: var(--font-body);
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-regular);
-  color: var(--color-text-secondary);
-  letter-spacing: var(--ls-wider);
-  text-transform: uppercase;
-  margin-top: 2px;
+  display: none;
 }
 
 /* ---- Navigation ---- */
@@ -123,7 +116,8 @@
   gap: var(--space-3);
 }
 
-.header-cart {
+.header-cart,
+.header-wishlist {
   position: relative;
   width: 42px;
   height: 42px;
@@ -138,17 +132,25 @@
   color: var(--color-text-primary);
 }
 
-.header-cart:hover {
+.header-cart:hover,
+.header-wishlist:hover {
   background: rgba(216, 156, 164, 0.1);
   color: var(--color-accent-primary);
 }
 
-.header-cart svg {
+.header-cart svg,
+.header-wishlist svg {
   width: 22px;
   height: 22px;
+  transition: transform var(--duration-fast) var(--ease-out);
 }
 
-.cart-count {
+.header-wishlist:hover svg {
+  transform: scale(1.15);
+}
+
+.cart-count,
+.wishlist-count {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -167,7 +169,8 @@
   transition: var(--transition-fast);
 }
 
-.cart-count.visible {
+.cart-count.visible,
+.wishlist-count.visible {
   opacity: 1;
   transform: scale(1);
 }

@@ -206,7 +206,7 @@
 }
 
 /* ================================================================
-   PAGE LOADER
+   PAGE LOADER — PREMIUM CROCHET STITCH ANIMATION
    ================================================================ */
 
 .page-loader {
@@ -218,9 +218,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: var(--space-6);
-  transition: opacity var(--duration-slow) var(--ease-out),
-              visibility var(--duration-slow) var(--ease-out);
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+              visibility 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .page-loader.hidden {
@@ -229,21 +228,178 @@
   pointer-events: none;
 }
 
-.loader-yarn {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 3px solid var(--color-border-light);
-  border-top-color: var(--color-accent-primary);
-  border-right-color: var(--color-accent-secondary);
-  animation: yarnSpin 1.2s ease-in-out infinite;
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.loader-text {
+.loader-visual {
+  position: relative;
+  margin-bottom: var(--space-6);
+}
+
+/* Animations for SVG elements */
+.loader-glow-ring {
+  transform-origin: center;
+  animation: glowPulse 2s ease-in-out infinite alternate;
+}
+
+.yarn-ball-main {
+  transform-origin: center;
+  animation: yarnBounce 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.yarn-thread-1,
+.yarn-thread-2,
+.yarn-thread-3,
+.yarn-thread-4 {
+  transform-origin: center;
+  animation: yarnSpin 12s linear infinite;
+}
+
+.yarn-thread-2 {
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.yarn-loose-thread {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: threadDraw 2s ease-out forwards;
+}
+
+.crochet-hook {
+  transform-origin: 95px 105px;
+  animation: hookWeave 2.2s ease-in-out infinite;
+}
+
+/* Brand Lettering Animation */
+.loader-brand {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+.brand-letter {
+  display: inline-block;
   font-family: var(--font-heading);
-  font-size: var(--fs-sm);
-  color: var(--color-text-secondary);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+  opacity: 0;
+  transform: translateY(25px) rotate(-10deg) scale(0.9);
+  animation: letterBounce 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.brand-space {
+  width: var(--space-2);
+}
+
+/* Individual letter delays */
+.brand-letter:nth-child(1) { animation-delay: 0.1s; }
+.brand-letter:nth-child(2) { animation-delay: 0.15s; }
+.brand-letter:nth-child(3) { animation-delay: 0.2s; }
+.brand-letter:nth-child(4) { animation-delay: 0.25s; }
+.brand-letter:nth-child(6) { animation-delay: 0.3s; }
+.brand-letter:nth-child(7) { animation-delay: 0.35s; }
+.brand-letter:nth-child(8) { animation-delay: 0.4s; }
+.brand-letter:nth-child(9) { animation-delay: 0.45s; }
+.brand-letter:nth-child(10) { animation-delay: 0.5s; }
+.brand-letter:nth-child(11) { animation-delay: 0.55s; }
+.brand-letter:nth-child(12) { animation-delay: 0.6s; }
+
+.loader-subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-2);
   letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeInSoft 1s ease-out 0.8s forwards;
+}
+
+/* Preloader Keyframes */
+@keyframes glowPulse {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.95;
+  }
+}
+
+@keyframes yarnBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-15px) scale(0.92, 1.08); /* Stretched up */
+  }
+  45% {
+    transform: translateY(2px) scale(1.06, 0.94); /* Squashed on land */
+  }
+  60% {
+    transform: translateY(-4px) scale(0.98, 1.02);
+  }
+  75% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes yarnSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes threadDraw {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hookWeave {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(-10px, -15px) rotate(-10deg);
+  }
+  60% {
+    transform: translate(8px, 10px) rotate(8deg);
+  }
+}
+
+@keyframes letterBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) rotate(-10deg) scale(0.9);
+  }
+  70% {
+    transform: translateY(-5px) rotate(5deg) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes fadeInSoft {
+  to {
+    opacity: 1;
+  }
 }
 
 /* ================================================================
@@ -322,4 +478,17 @@
     opacity: 1;
     transform: none;
   }
+}
+
+/* Page transitions */
+.page-wrapper {
+  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-wrapper.page-exit {
+  opacity: 0;
+  transform: translateY(-15px);
 }

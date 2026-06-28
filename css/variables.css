@@ -78,7 +78,7 @@
   --space-32: 8rem;     /* 128px */
 
   /* Section spacing */
-  --section-py: clamp(3rem, 2rem + 5vw, 6rem);
+  --section-py: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
   --section-px: clamp(1rem, 0.5rem + 2.5vw, 2rem);
 
   /* ---- Borders ---- */

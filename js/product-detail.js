@@ -1,17 +1,5 @@
-/* ============================================================
-   Mons Crochet — Product Detail Module
-   ============================================================ */
-
 import { showToast } from './loader.js';
-
-const PRODUCTS = {
-  '1': { id: '1', name: 'Rose Bouquet — Dusty Pink', category: 'Bouquets', price: 1299, desc: 'Beautiful, long-lasting pink crochet roses. Hand-knitted with high-quality yarn. Perfect for gifting.', image: 'assets/images/prod-rose-bouquet.png' },
-  '2': { id: '2', name: 'Sunflower in Ceramic Vase', category: 'Flowers', price: 899, desc: 'A bright, handcrafted crochet sunflower in a small vase. A cute decor piece for desks and shelves.', image: 'assets/images/prod-sunflower.png' },
-  '3': { id: '3', name: 'Teddy Bear Keychain', category: 'Keychains', price: 399, desc: 'Adorable handmade crochet teddy bear keychain. Soft, lightweight, and perfect to hang on bags.', image: 'assets/images/prod-bear-keychain.png' },
-  '4': { id: '4', name: 'Tulip Collection — Pastel', category: 'Flowers', price: 1599, desc: 'A gorgeous set of colorful crochet tulips. Perfect home decor that stays fresh forever.', image: 'assets/images/prod-tulip-set.png' },
-  '5': { id: '5', name: 'Storage Basket — Natural', category: 'Home Decor', price: 799, desc: 'Handmade crochet storage basket. Useful for organizing cosmetics, keys, and daily items.', image: 'assets/images/prod-basket.png' },
-  '6': { id: '6', name: 'Flower Coasters Set of 4', category: 'Home Decor', price: 499, desc: 'Set of 4 handmade crochet coasters. Soft, absorbable, and protects tables beautifully.', image: 'assets/images/prod-coasters.png' },
-};
+import { PRODUCTS } from './products-db.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
@@ -106,12 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       document.dispatchEvent(cartEvent);
-      // Open Cart Drawer
-      const cartDrawer = document.getElementById('cartDrawer');
-      const cartOverlay = document.getElementById('cartOverlay');
-      cartDrawer?.classList.add('open');
-      cartOverlay?.classList.add('open');
-      document.body.classList.add('no-scroll');
+      // Redirect to Checkout Page
+      window.location.href = 'checkout.html';
     });
   }
 
@@ -137,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 class="product-card-name">${p.name}</h4>
           <div class="product-card-price">₹${p.price.toLocaleString('en-IN')}</div>
           <div class="product-card-btns">
-            <a href="product.html?id=${p.id}" class="btn btn-primary btn-sm">Buy Now</a>
+            <button class="btn btn-primary btn-sm buy-now-btn" data-product-id="${p.id}">Buy Now</button>
             <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product-id="${p.id}" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}">Add to Cart</button>
           </div>
         </div>

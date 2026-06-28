@@ -199,6 +199,26 @@
 .product-card-actions .action-btn svg {
   width: 18px;
   height: 18px;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.product-card-actions .wishlist-btn.active {
+  color: var(--color-accent-primary);
+  background: var(--color-bg-white);
+  box-shadow: 0 4px 12px rgba(216, 156, 164, 0.25);
+}
+
+.product-card-actions .wishlist-btn.active:hover {
+  background: var(--color-accent-primary);
+  color: var(--color-text-white);
+}
+
+.wishlist-btn:hover svg {
+  transform: scale(1.2);
+}
+
+.wishlist-btn.active svg {
+  animation: heartBeat 0.4s var(--ease-out);
 }
 
 .product-badge {
