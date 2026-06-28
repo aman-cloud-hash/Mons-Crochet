@@ -1,16 +1,16 @@
 import { initAnimations } from './animations.js';
 
 const PRODUCTS = [
-  { id: '1', name: 'Rose Bouquet — Dusty Pink', category: 'Bouquets', price: 1299, desc: 'A beautiful handcrafted bouquet of six dusty pink crochet roses.', image: 'assets/images/prod-rose-bouquet.png', label: 'New' },
-  { id: '2', name: 'Sunflower in Ceramic Vase', category: 'Flowers', price: 899, desc: 'A cheerful handcrafted sunflower in a minimalist ceramic vase.', image: 'assets/images/prod-sunflower.png', label: '' },
-  { id: '3', name: 'Teddy Bear Keychain', category: 'Keychains', price: 399, desc: 'Adorable mini crocheted teddy bear keychain in dusty rose.', image: 'assets/images/prod-bear-keychain.png', label: 'Popular' },
-  { id: '4', name: 'Tulip Collection — Pastel', category: 'Flowers', price: 1599, desc: 'A vibrant set of pastel crocheted tulips in a glass vase.', image: 'assets/images/prod-tulip-set.png', label: '' },
-  { id: '5', name: 'Storage Basket — Natural', category: 'Home Decor', price: 799, desc: 'Sturdy handcrafted crochet basket in natural tones.', image: 'assets/images/prod-basket.png', label: '' },
-  { id: '6', name: 'Flower Coasters Set of 4', category: 'Home Decor', price: 499, desc: 'Elegant mandala-pattern crocheted coasters in pastel tones.', image: 'assets/images/prod-coasters.png', label: 'Custom' },
-  { id: '7', name: 'Daisy Bouquet — Sunshine', category: 'Bouquets', price: 1199, desc: 'Bright and cheerful daisy bouquet made with love.', image: 'assets/images/cat-bouquets.png', label: '' },
-  { id: '8', name: 'Lavender Stems', category: 'Flowers', price: 599, desc: 'A set of delicate crochet lavender stems.', image: 'assets/images/cat-flowers.png', label: 'Popular' },
-  { id: '9', name: 'Strawberry Keychain', category: 'Keychains', price: 299, desc: 'Cute mini crocheted strawberry keychain.', image: 'assets/images/cat-keychains.png', label: 'New' },
-  { id: '10', name: 'Festival Gift Box', category: 'Gift Hampers', price: 2499, desc: 'A beautiful premium gift box for your loved ones.', image: 'assets/images/cat-gifts.png', label: 'Custom' },
+  { id: '1', name: 'Rose Bouquet — Dusty Pink', category: 'Bouquets', price: 1299, desc: 'Beautiful, long-lasting pink crochet roses. Hand-knitted with high-quality yarn. Perfect for gifting.', image: 'assets/images/prod-rose-bouquet.png', label: 'New' },
+  { id: '2', name: 'Sunflower in Ceramic Vase', category: 'Flowers', price: 899, desc: 'A bright, handcrafted crochet sunflower in a small vase. A cute decor piece for desks and shelves.', image: 'assets/images/prod-sunflower.png', label: '' },
+  { id: '3', name: 'Teddy Bear Keychain', category: 'Keychains', price: 399, desc: 'Adorable handmade crochet teddy bear keychain. Soft, lightweight, and perfect to hang on bags.', image: 'assets/images/prod-bear-keychain.png', label: 'Popular' },
+  { id: '4', name: 'Tulip Collection — Pastel', category: 'Flowers', price: 1599, desc: 'A gorgeous set of colorful crochet tulips. Perfect home decor that stays fresh forever.', image: 'assets/images/prod-tulip-set.png', label: '' },
+  { id: '5', name: 'Storage Basket — Natural', category: 'Home Decor', price: 799, desc: 'Handmade crochet storage basket. Useful for organizing cosmetics, keys, and daily items.', image: 'assets/images/prod-basket.png', label: '' },
+  { id: '6', name: 'Flower Coasters Set of 4', category: 'Home Decor', price: 499, desc: 'Set of 4 handmade crochet coasters. Soft, absorbable, and protects tables beautifully.', image: 'assets/images/prod-coasters.png', label: 'Custom' },
+  { id: '7', name: 'Daisy Bouquet — Sunshine', category: 'Bouquets', price: 1199, desc: 'Bright and cheerful handmade daisy bouquet. Bring a smile to your loved ones.', image: 'assets/images/cat-bouquets.png', label: '' },
+  { id: '8', name: 'Lavender Stems', category: 'Flowers', price: 599, desc: 'Delicate crochet lavender stems. Great for adding color and class to any room.', image: 'assets/images/cat-flowers.png', label: 'Popular' },
+  { id: '9', name: 'Strawberry Keychain', category: 'Keychains', price: 299, desc: 'Cute mini crochet strawberry keychain. Add it to your keys or backpacks.', image: 'assets/images/cat-keychains.png', label: 'New' },
+  { id: '10', name: 'Festival Gift Box', category: 'Gift Hampers', price: 2499, desc: 'A premium handmade gift box packed with adorable crochet items.', image: 'assets/images/cat-gifts.png', label: 'Custom' },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
